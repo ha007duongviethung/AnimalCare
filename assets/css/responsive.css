@@ -1,0 +1,75 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px)
+{
+    :root
+    {
+
+    }
+
+    /* hide-on-mobile-tablet */
+    .hid-mt
+    {
+        display: none;
+    }
+
+    .sh-mt {
+        display: block;
+    }
+
+    .cpn, .ft-sg {
+        text-align: center;
+    }
+
+    .sub-ft-w, .sub-ft-tx {
+        display: block;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px)
+{
+    /* hide-on-tablet */
+    .hid-t
+    {
+        display: none;
+    }
+
+    .st-t {
+        margin: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px)
+{
+    /* hide-on-mobile */
+    .hid-m
+    {
+        display: none;
+    }    
+
+    .mt-100-m {
+        margin-top: 100px;
+    }
+
+    .t-ct_bd {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .t-ct_bd.st-ct_bd {
+        top: 80%;
+        transform: unset;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .pd-l {
+        position: unset;
+    }
+
+    .pd-l > button {
+        padding: 15px 10px;
+        margin-right: unset;
+    }
+}

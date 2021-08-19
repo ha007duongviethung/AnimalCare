@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Find | Pets</title>
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/grid.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+	<div class="app">
+		<header class="header">
+			<div class="grid wide">
+				<!-- header logo -->
+				<div class="hd-lg">
+					<img src="./assets/img/Heroes_Pluss.png" alt="">
+				</div>
+				<!-- header navbar  -->
+				<nav class="hd-nb">
+					<ul class="hd-lt hid-mt">
+						<li class="hd-it"><a href="./" class="hd-lk">Home</a></li>
+						<li class="hd-it"><a href="./findpets.html" class="hd-lk at">Find Pets</a></li>
+						<li class="hd-it"><a href="./stories.html" class="hd-lk">Story</a></li>
+						<li class="hd-it"><a href="#" class="hd-lk">Shop</a></li>
+					</ul>
+					<div class="hd-sr">
+						<input type="text" placeholder="Nhập nội dung tìm kiếm...">
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512.005 512.005;" xml:space="preserve">
+							<g>
+								<g>
+									<path d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
+										S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
+										c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
+										 M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z"/>
+								</g>
+							</g>
+						</svg>
+					</div>
+				</nav>
+				<!-- header user -->
+				<div class="hd-us hid-mt">
+					<div class="btn hd-sg js-sg">Sign in</div>
+					<div class="btn hd-sg js-sg">Sign up</div>
+				</div>
+				<!-- header nav mobile tablet -->
+				<div class="hd-n-mt hid sh-mt js-mn">
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+						<g>
+							<g>
+								<path d="M467,61H165c-24.82,0-45,20.19-45,45c0,24.82,20.18,45,45,45h302c24.81,0,45-20.18,45-45C512,81.19,491.81,61,467,61z"/>
+							</g>
+						</g>
+						<g>
+							<g>
+								<path d="M467,211H165c-24.82,0-45,20.19-45,45c0,24.82,20.18,45,45,45h302c24.81,0,45-20.18,45-45C512,231.19,491.81,211,467,211z
+									"/>
+							</g>
+						</g>
+						<g>
+							<g>
+								<path d="M467,361H165c-24.82,0-45,20.19-45,45c0,24.82,20.18,45,45,45h302c24.81,0,45-20.18,45-45C512,381.19,491.81,361,467,361z
+									"/>
+							</g>
+						</g>
+						<g>
+							<g>
+								<path d="M45,61C20.18,61,0,81.19,0,106c0,24.82,20.18,45,45,45c24.81,0,45-20.18,45-45C90,81.19,69.81,61,45,61z"/>
+							</g>
+						</g>
+						<g>
+							<g>
+								<path d="M45,211c-24.82,0-45,20.19-45,45c0,24.82,20.18,45,45,45c24.81,0,45-20.18,45-45C90,231.19,69.81,211,45,211z"/>
+							</g>
+						</g>
+						<g>
+							<g>
+								<path d="M45,361c-24.82,0-45,20.19-45,45c0,24.82,20.18,45,45,45c24.81,0,45-20.18,45-45C90,381.19,69.81,361,45,361z"/>
+							</g>
+						</g>
+					</svg>
+					<ul class="hd-mt-l hid js-l-it">
+						<li><a class="hd-mt-lk" href="./">Home</a></li>
+						<li><a class="hd-mt-lk" href="./findpets.html">Find Pets</a></li>
+						<li><a class="hd-mt-lk" href="./stories.html">Stories</a></li>
+						<li><a class="hd-mt-lk" href="#">Shop</a></li>
+						<li><span class="hd-mt-lk js-sg">Sign in</span></li>
+						<li><span class="hd-mt-lk js-sg">Sign up</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="md hid js-md">
+				<div class="md-ol">
+					<div class="md-bd js-md-bd">
+						<!-- Form sign -->
+						<div class="sg hid js-f">
+							<div class="sg-h js-cl">
+								<h2>Login</h2>
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+									<g>
+										<g>
+											<path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+												L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+												c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+												l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+												L284.286,256.002z"/>
+										</g>
+									</g>
+								</svg>
+							</div>
+							<form action="" method="post" class="sg-f">
+								<div class="sg-ct">
+									<label for="lg-e" class="sg-t">Email: </label>
+									<input type="email" name="email" id="lg-e" required>
+								</div>
+								<div class="sg-ct mt-10">
+									<label for="lg-p" class="sg-t">Password: </label>
+									<input type="password" name="pass" id="lg-p" required>
+								</div>
+								<div class="sg-r mt-20">
+									<input type="checkbox" id="rmb" name="remember">
+									<label for="rmb">Remember</label>
+								</div>
+								<div class="sub mt-50">
+									<button type="submit" class="btn">Login</button>
+								</div>
+							</form>
+							<div class="sg-ot mt-20">
+								<button class="btn js-sg">Forgot Password</button>
+								<button class="btn ver js-sg">Sign up</button>
+							</div>
+						</div>
+
+						<div class="sg hid js-f">
+							<div class="sg-h js-cl">
+								<h2>Register</h2>
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+									<g>
+										<g>
+											<path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+												L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+												c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+												l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+												L284.286,256.002z"/>
+										</g>
+									</g>
+								</svg>
+							</div>
+							<form action="" method="post" class="sg-f">
+								<div class="sg-ct">
+									<label for="lg-n" class="sg-t">Full Name: </label>
+									<input type="text" name="name" id="lg-n" required>
+								</div>
+								<div class="sg-ct mt-10">
+									<label for="rg-e" class="sg-t">Email: </label>
+									<input type="email" name="email" id="rg-e" required>
+								</div>
+								<div class="sg-ct mt-10">
+									<label for="rg-p" class="sg-t">Password: </label>
+									<input type="password" name="pass" id="rg-p" required>
+								</div>
+								<div class="sg-ct mt-10">
+									<label for="r-rg-p" class="sg-t">Retype Password: </label>
+									<input type="password" name="pass" id="r-rg-p" required>
+								</div>
+								<div class="sg-r mt-20">
+									<input type="checkbox" name="remember" class="js-rmb">
+									<label>Bằng cách nhấp vào Đăng ký, bạn đồng ý với <a href="#">Điều khoản</a>, <a href="#"> Chính sách dữ liệu</a> và <a href="#">Chính sách cookie</a> Chính sách cookie của chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS và hủy nhận bất kỳ lúc nào</label>
+								</div>
+								<div class="sub mt-50">
+									<button type="submit" disabled class="btn js-rg">Register</button>
+								</div>
+							</form>
+							<div class="sg-ot mt-20">
+								<i>Do you have an account?</i>
+								<button class="btn js-sg">Sign in</button>
+							</div>
+						</div>
+
+						<div class="sg hid js-f">
+							<div class="sg-h js-cl">
+								<h2>Forgot Password</h2>
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+									<g>
+										<g>
+											<path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+												L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+												c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+												l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+												L284.286,256.002z"/>
+										</g>
+									</g>
+								</svg>
+							</div>
+							<form action="" method="post" class="sg-f">
+								<div class="sg-r">
+									<label for="rmb">Vui lòng nhập email hoặc số di động để tìm kiếm tài khoản của bạn.</label>
+								</div>
+								<div class="sg-ct mt-10">
+									<label for="fg-e" class="sg-t">Email: </label>
+									<input type="email" name="email" id="fg-e" required>
+								</div>
+								<div class="sub mt-50">
+									<button type="submit" class="btn">Submit</button>
+								</div>
+							</form>
+							<div class="sg-ot mt-20">
+								<i>Do you have an account?</i>
+								<button class="btn js-sg">Sign in</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="content mt-50">
+			<div class="pf-t-ct"></div>
+			<form class="pf-d" action="" method="">
+				<div class="pf-n">
+					<label for="breed">Breeds</label>
+					<input type="text" list="br" placeholder="Enter type breed..." id="breed" class="js-br">
+				</div>
+				<div class="pf-n">
+					<label for="namebreed">Name</label>
+					<input type="text" placeholder="Enter type name..." id="namebreed" class="js-n" disabled>
+				</div>
+				<div class="pf-n">
+					<label></label>
+					<button class="btn" type="submit">Find</button>
+				</div>
+			</form>
+
+			<!-- list example -->
+			<datalist id="br">
+				<option value="Dogs"></option>
+				<option value="Cats"></option>
+				<option value="Birds"></option>
+				<option value="Fish"></option>
+			</datalist>
+			<datalist id="ndog">
+				<option value="Affenpinscher"></option>
+				<option value="Afghan Hound"></option>
+				<option value="Airedale Terrier"></option>
+				<option value="Akita"></option>
+				<option value="Alaskan Klee Kai"></option>
+				<option value="Alaskan Malamute"></option>
+				<option value="American Bulldog"></option>
+			</datalist>
+			<datalist id="ncat">
+				<option value="Abyssinian"></option>
+				<option value="American Bobtail"></option>
+				<option value="American Curl"></option>
+				<option value="American Shorthair"></option>
+				<option value="American Wirehair"></option>
+				<option value="Applehead Siamese"></option>
+				<option value="Balinese"></option>
+			</datalist>
+			<datalist id="nbird">
+				<option value="Button-Quail"></option>
+				<option value="Chicken"></option>
+				<option value="Dove"></option>
+				<option value="Duck"></option>
+				<option value="Emu"></option>
+				<option value="Finch"></option>
+				<option value="Goose"></option>
+			</datalist>
+			<datalist id="nfish">
+				<option value="Amphibian"></option>
+				<option value="Freshwater Fish"></option>
+				<option value="Goldfish"></option>
+				<option value="Saltwater Fish"></option>
+				<option value="Hermit Crab"></option>
+				<option value="Scorpion"></option>
+				<option value="Tarantula"></option>
+			</datalist>
+
+			<!-- Top Pets -->
+			<div class="grid wide">
+				<h2 class="ct-h mt-50">Top Pets</h2>
+				<div class="row mb-50">
+					<div class="col l-3 m-4 c-12 mt-10">
+						<div class="ct-it">
+							<div class="ct-ig">
+								<img src="./assets/img/alaskan.png" alt="alaskan">
+							</div>
+							<div class="ct-if">
+								<h3 class="tp-t">Alaskan Klee Kai</h3>
+								<p class="tp-i"> The Alaskan Klee Kai have ancient roots descending from the numerous native dogs which have populated Alaska for thousands of years. Many of these dogs became not only loving family pets, but in the harsh environment of Alaska, were crucial for survival for the tribal groups and nomadic people. They excelled at pulling sleds, hiking, hunting, tracking, and were early warning alerts for dangers such as wild animals or enemies approaching. One of the largest groups of native dogs that make up the base of what became known as the Alaskan Husky type of dog are the Alaskan Interior Village dogs. Husky lines from Siberia, which were imported to Alaska in the early 1900s, were added to much of this hearty dog population as dog sled racing started to grow. They developed an intelligent, vigorous, and hardworking dog, with a happy nature.</p>
+							</div>
+							<a href="#" class="see">
+								<span>See More</span>
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
+									<g>
+										<g>
+											<path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+												L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
+												l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/>
+										</g>
+									</g>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="col l-3 m-4 c-12 mt-10">
+						<div class="ct-it">
+							<div class="ct-ig">
+								<img src="./assets/img/beagle.png" alt="beagle">
+							</div>
+							<div class="ct-if">
+								<h3 class="tp-t">Beagle</h3>
+								<p class="tp-i"> The origins of this ancient breed have been the subject of conjecture for centuries. Even the breed name is a shrouded in mystery. Some experts say it derives from the Gaelic word beag (“little”), while others point to the French term for the sound hounds make while hunting: be’geule. There are reports of small pack-hounds employed to hunt rabbit and hare in England long before the Roman legions arrived in 55 B.C. An English authority called the Beagle the “foothound of our country, indigenous to the soil.” By the 1500s, most English gentlemen had packs of large hounds that tracked deer, and smaller hounds that tracked hares. The smaller, more compact hounds were ancestors of our modern Beagle.</p>
+							</div>
+							<a href="#" class="see">
+								<span>See More</span>
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
+									<g>
+										<g>
+											<path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+												L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
+												l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/>
+										</g>
+									</g>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="col l-3 m-0 c-12 mt-10">
+						<div class="ct-it">
+							<div class="ct-ig">
+								<img src="./assets/img/biewer.png" alt="biewer">
+							</div>
+							<div class="ct-if">
+								<h3 class="tp-t">Biewer Terrier</h3>
+								<p class="tp-i"> The heritage of the Biewer Terrier has been an interesting and much discussed topic over the years. It started with Mr. and Mrs. Biewer, who instead of having children, bred, raised, sold, and showed Yorkshire Terriers. They had a very large and successful breeding program throughout the 1970s and into the ’80s. By 1981, their enthusiasm for showing the standard Yorkshire Terriers tapered off.</p>
+							</div>
+							<a href="#" class="see">
+								<span>See More</span>
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
+									<g>
+										<g>
+											<path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+												L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
+												l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/>
+										</g>
+									</g>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="col l-3 m-4 c-12 mt-10">
+						<div class="ct-it">
+							<div class="ct-ig">
+								<img src="./assets/img/bulldog.png" alt="bulldog">
+							</div>
+							<div class="ct-if">
+								<h3 class="tp-t">Bulldog</h3>
+								<p class="tp-i"> A turning point in Bulldog history came in 1835, when England banned blood sports with animals. Blood sports went underground, literally, as bullbaiting gave way to pit-dog fighting in cellars. This illicit activity required quicker, more animated dogs than the plodding Bulldog of the early 19th century. Gamblers created their fiery, four-legged gladiators by crossing various terriers with Bulldogs, and in so doing put forth early prototypes of the Bull Terrier, Staffordshire Bull Terrier, and other bull-type terrier breeds still popular today.</p>
+							</div>
+							<a href="#" class="see">
+								<span>See More</span>
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
+									<g>
+										<g>
+											<path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+												L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
+												l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/>
+										</g>
+									</g>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="col l-3 m-4 c-12 mt-10">
+						<div class="ct-it">
+							<div class="ct-ig">
+								<img src="./assets/img/alaskan.png" alt="alaskan">
+							</div>
+							<div class="ct-if">
+								<h3 class="tp-t">Alaskan Klee Kai</h3>
+								<p class="tp-i"> The Alaskan Klee Kai have ancient roots descending from the numerous native dogs which have populated Alaska for thousands of years. Many of these dogs became not only loving family pets, but in the harsh environment of Alaska, were crucial for survival for the tribal groups and nomadic people. They excelled at pulling sleds, hiking, hunting, tracking, and were early warning alerts for dangers such as wild animals or enemies approaching. One of the largest groups of native dogs that make up the base of what became known as the Alaskan Husky type of dog are the Alaskan Interior Village dogs. Husky lines from Siberia, which were imported to Alaska in the early 1900s, were added to much of this hearty dog population as dog sled racing started to grow. They developed an intelligent, vigorous, and hardworking dog, with a happy nature.</p>
+							</div>
+							<a href="#" class="see">
+								<span>See More</span>
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
+									<g>
+										<g>
+											<path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+												L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
+												l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/>
+										</g>
+									</g>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="col l-3 m-4 c-12 mt-10">
+						<div class="ct-it">
+							<div class="ct-ig">
+								<img src="./assets/img/beagle.png" alt="beagle">
+							</div>
+							<div class="ct-if">
+								<h3 class="tp-t">Beagle</h3>
+								<p class="tp-i"> The origins of this ancient breed have been the subject of conjecture for centuries. Even the breed name is a shrouded in mystery. Some experts say it derives from the Gaelic word beag (“little”), while others point to the French term for the sound hounds make while hunting: be’geule. There are reports of small pack-hounds employed to hunt rabbit and hare in England long before the Roman legions arrived in 55 B.C. An English authority called the Beagle the “foothound of our country, indigenous to the soil.” By the 1500s, most English gentlemen had packs of large hounds that tracked deer, and smaller hounds that tracked hares. The smaller, more compact hounds were ancestors of our modern Beagle.</p>
+							</div>
+							<a href="#" class="see">
+								<span>See More</span>
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
+									<g>
+										<g>
+											<path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+												L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
+												l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/>
+										</g>
+									</g>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="col l-3 m-0 c-12 mt-10">
+						<div class="ct-it">
+							<div class="ct-ig">
+								<img src="./assets/img/biewer.png" alt="biewer">
+							</div>
+							<div class="ct-if">
+								<h3 class="tp-t">Biewer Terrier</h3>
+								<p class="tp-i"> The heritage of the Biewer Terrier has been an interesting and much discussed topic over the years. It started with Mr. and Mrs. Biewer, who instead of having children, bred, raised, sold, and showed Yorkshire Terriers. They had a very large and successful breeding program throughout the 1970s and into the ’80s. By 1981, their enthusiasm for showing the standard Yorkshire Terriers tapered off.</p>
+							</div>
+							<a href="#" class="see">
+								<span>See More</span>
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
+									<g>
+										<g>
+											<path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+												L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
+												l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/>
+										</g>
+									</g>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="col l-3 m-4 c-12 mt-10">
+						<div class="ct-it">
+							<div class="ct-ig">
+								<img src="./assets/img/bulldog.png" alt="bulldog">
+							</div>
+							<div class="ct-if">
+								<h3 class="tp-t">Bulldog</h3>
+								<p class="tp-i"> A turning point in Bulldog history came in 1835, when England banned blood sports with animals. Blood sports went underground, literally, as bullbaiting gave way to pit-dog fighting in cellars. This illicit activity required quicker, more animated dogs than the plodding Bulldog of the early 19th century. Gamblers created their fiery, four-legged gladiators by crossing various terriers with Bulldogs, and in so doing put forth early prototypes of the Bull Terrier, Staffordshire Bull Terrier, and other bull-type terrier breeds still popular today.</p>
+							</div>
+							<a href="#" class="see">
+								<span>See More</span>
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002;" xml:space="preserve">
+									<g>
+										<g>
+											<path d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+												L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
+												l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/>
+										</g>
+									</g>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid wide s-cm">
+				<h2>Breeds</h2>
+				<div class="row mt-50 cm-w">
+					<div class="col l-3 m-3 c-6 mt-20">
+						<a href="./allPets.html" class="cm-it">
+							<div class="cm-ig">
+								<img src="./assets/img/paw.png" alt="">
+							</div>
+							<div class="cm-if">
+								<h3>Dogs</h3>
+								<span>Quality content, accurate, reputable sources, vet reviewed.</span>
+							</div>
+						</a>
+					</div>
+					<div class="col l-3 m-3 c-6 mt-20">
+						<a href="./allPets.html" class="cm-it">
+							<div class="cm-ig">
+								<img src="./assets/img/witch-cat.png" alt="">
+							</div>
+							<div class="cm-if">
+								<h3>Cats</h3>
+								<span>Quality content, accurate, reputable sources, vet reviewed.</span>
+							</div>
+						</a>
+					</div>
+					<div class="col l-3 m-3 c-6 mt-20">
+						<a href="./allPets.html" class="cm-it">
+							<div class="cm-ig">
+								<img src="./assets/img/dove.png" alt="">
+							</div>
+							<div class="cm-if">
+								<h3>Birds</h3>
+								<span>Quality content, accurate, reputable sources, vet reviewed.</span>
+							</div>
+						</a>
+					</div>
+					<div class="col l-3 m-3 c-6 mt-20">
+						<a href="./allPets.html" class="cm-it">
+							<div class="cm-ig">
+								<img src="./assets/img/fish.png" alt="">
+							</div>
+							<div class="cm-if">
+								<h3>Fish</h3>
+								<span>Quality content, accurate, reputable sources, vet reviewed.</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer mt-50">
+			<div class="ft-t">Your Pet,Out Passion</div>
+			<div class="grid wide">
+				<div class="cpn">
+					<h2>Heroes active plus</h2>
+				</div>
+				<div class="row">
+					<div class="col l-4 m-6 c-12">
+						<div class="ft-m">
+							<a href="./">Home</a>
+							<a href="./findpets.html">Find Pets</a>
+							<a href="./stories.html">Stories</a>
+							<a href="#">Shop</a>
+							<a href="#"></a>
+						</div>
+					</div>
+					<div class="col l-4 m-6 c-12">
+						<div class="ft-m">
+							<a href="#">Privacy Policy (Updated)</a>
+							<a href="#">About Our Ads</a>
+							<a href="#">Shelter & Rescue Registration</a>
+							<a href="#">Do Not Sell My Personal Information</a>
+							<a href="#"></a>
+						</div>
+					</div>
+					<div class="col l-4 m-12 c-12">
+						<div class="ft-sg">
+							<p>To get the latest on pet adoption and pet care, sign up to hear from us. </p>
+							<button class="btn js-sg">Sign up</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sub-ft mt-20">
+				<div class="grid wide sub-ft-w">
+					<div class="sub-ft-tx">
+						<p>©2021 Heroes active plus</p>
+						<p>All trademarks are owned by Société des Produits Nestlé S.A., or used with permission.</p>
+					</div>
+					<div class="sub-ft-sn">
+						<a href="#"><img src="./assets/img/facebook.png" alt=""></a>
+						<a href="#"><img src="./assets/img/instagram.png" alt=""></a>
+						<a href="#"><img src="./assets/img/twitter.png" alt=""></a>
+						<a href="#"><img src="./assets/img/youtube.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+	<script src="./assets/js/main.js"></script>
+	<script src="./assets/js/main2.js"></script>
+</body>
+</html>
